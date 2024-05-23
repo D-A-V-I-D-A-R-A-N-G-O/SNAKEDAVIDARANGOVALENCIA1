@@ -1,0 +1,57 @@
+
+*{
+    font-family: cursive;
+    background-image: url(./img/fo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#board, .boardInfo{
+    max-width: 20px;
+}
+
+#titulo {
+    text-align: center;
+    color: #126360;
+    font-size: 60px;
+}    
+
+#board {
+    display: grid;
+    grid-template-columns: repet(10, 1fr);
+}
+#start, .boardInfo{
+    font-size: 40px;
+    color: #efc66a;
+}
+#gameOver {
+    display: none;
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#start{
+    border-radius: 30px;
+}
+#scoreBoard {
+    background-color: none;
+    border: none;
+}
+.square {
+    aspect-ratio: 1;
+}
+.emptySquare {
+    background-color: blueviolet;
+}
+
+.snakeSquare {
+    background-color: chocolate;
+    border: 2px solid #000;
+}
+.foodSquare {
+    background-color: darkviolet;
+    border: 1px solid aqua;
+}
