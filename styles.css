@@ -8,7 +8,7 @@
 }
 
 #board, .boardInfo{
-    max-width: 20px;
+    max-width: 30spx;
 }
 
 #titulo {
@@ -24,24 +24,24 @@
 #start, .boardInfo{
     font-size: 40px;
     color: #efc66a;
+    display: flex;
 }
 #gameOver {
     display: none;
 }
-.boardInfo{
-    display: flex;
-    justify-content: space-around;
-   
-}
+
 #start{
     border-radius: 30px;
+    border-color: #93f6ad;
+    border-style: dashed;
+    border-width: 5px;
 }
 #scoreBoard {
     background-color: none;
-    border: none;
+    border-radius: 3px;
 }
-.square {
-    aspect-ratio: 1;
+/* .square {
+    aspect-ratio: 44px;
 }
 .emptySquare {
     background-color: blueviolet;
@@ -49,9 +49,9 @@
 
 .snakeSquare {
     background-color: chocolate;
-    border: 2px solid #000;
+    border: 5px solid #000;
 }
 .foodSquare {
     background-color: darkviolet;
     border: 1px solid aqua;
-}
+} */
