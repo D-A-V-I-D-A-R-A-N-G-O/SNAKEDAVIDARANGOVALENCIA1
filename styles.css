@@ -7,8 +7,9 @@ body {
 }
 #titu{
     text-align: center;
-    color: #126360;
+    color: #efc66a;
     font-size: 60px;
+    margin-block-end: 5px;
 }
 #board {
     display: grid;
@@ -16,7 +17,7 @@ body {
     grid-template-rows: repeat(10, 60px);
     grid-template-columns: repeat(10, 60px);
     gap: 0px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #start, .boardInfo{
     margin-top: 20px;
@@ -38,6 +39,7 @@ body {
 .square {
     width: 60px;
     height: 60px;
+    
 }
 
 .emptySquare {
@@ -48,15 +50,16 @@ body {
 }
 
 .snakeSquare {
+    border-radius: 25px;
     background-image: url(./img/piel.jpg);
-     
     background-size: cover;
+    border: #efc66a;
 }
 
 .foodSquare {
-    background-image: url(./img/tenor.gif);
+    background-image: url(./img/tenor\ \(1\).gif);
     background-size: cover;
-    color: #000;
+    border-radius: 10px;
     
 }
 
@@ -73,12 +76,12 @@ body {
   }
 #gameover {
     animation-name:fadeIn;
-    animation-duration: 3s;
+    animation-duration: 4s;
     display: flex;
     align-items: baseline;
     color: red;
     font-size: 40px;
     text-align: center;
     font-weight: 700;
-
+    margin-block-end: 5px;
 }
