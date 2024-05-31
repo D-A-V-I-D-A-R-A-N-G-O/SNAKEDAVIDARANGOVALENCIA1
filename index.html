@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnakeGame🐍⚕️🐍</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" type="text/javascript" defer></script>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="titulo">🐍THE SNAKE GAME🐍</h1>
-    
-    <div id="board"></div>
-
+    <h1 id="titu">🐍THE SNAKE GAME🐍</h1>
     <div class="boardInfo">
-        <div>
-            SCORE: <div id="scoreBoard"></div>
-        </div>
-
-        <button id="start">START</button>
-
-        <div id="gameOver">gameOver</div>
-    </div>   
+        <div id="scoreBoard">Score: 0</div>
+        <button id="start">Start Game</button>
+    </div>
+    <div id="gameover" style="display: none;">Game Over!</div>
+    <div id="board"></div>
+    <script src="index.js"></script>
 </body>
 </html>

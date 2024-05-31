@@ -1,57 +1,49 @@
-
-*{
+body {
     font-family: cursive;
     background-image: url(./img/fo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-#board, .boardInfo{
-    max-width: 30spx;
+#titu{
+    display: flex;
+    color: #000;
 }
-
-#titulo {
-    text-align: center;
-    color: #126360;
-    font-size: 60px;
-}    
-
 #board {
     display: grid;
-    grid-template-columns: repet(10, 1fr);
+    justify-content: center;
+    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 20px);
+    gap: 1px;
+    margin-top: 20px;
 }
-#start, .boardInfo{
-    font-size: 40px;
-    color: #efc66a;
+.boardInfo{
     display: flex;
 }
-#gameOver {
-    display: none;
+
+.square {
+    width: 20px;
+    height: 20px;
 }
 
-#start{
-    border-radius: 30px;
-    border-color: #93f6ad;
-    border-style: dashed;
-    border-width: 5px;
-}
-#scoreBoard {
-    background-color: none;
-    border-radius: 3px;
-}
-/* .square {
-    aspect-ratio: 44px;
-}
 .emptySquare {
-    background-color: blueviolet;
+    background-color: #203;
 }
 
 .snakeSquare {
-    background-color: chocolate;
-    border: 5px solid #000;
+    background-color: #000;
 }
+
 .foodSquare {
-    background-color: darkviolet;
-    border: 1px solid aqua;
-} */
+    background-color: red;
+}
+
+#scoreBoard {
+    margin-bottom: 20px;
+}
+
+#gameover {
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+}
