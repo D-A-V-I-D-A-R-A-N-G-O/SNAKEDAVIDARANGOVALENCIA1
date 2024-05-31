@@ -132,7 +132,7 @@ const addFood = () => {
     direction = 'ArrowRight';
     boardSquares = Array.from(Array(boardSize), () => new Array(boardSize).fill(squareTypes.emptySquare));
     console.log(boardSquares);
-    board.innerHTML = ;
+    board.innerHTML = '';
     emptySquares = [];
     createBoard();
  }

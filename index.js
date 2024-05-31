@@ -1,11 +1,11 @@
 const board = document.getElementById('board');
-const scoreBoard = document.getElementById('scoreBoard');
+const scoreBoard = document.getElementById('score');
 const startButton = document.getElementById('start');
 const gameOverSign = document.getElementById('gameover');
 
 // Configuración del juego
-const boardSize = 20;
-const gameSpeed = 80;
+const boardSize = 10;
+const gameSpeed = 125;
 const squareTypes = {
     emptySquare: 0,
     snakeSquare: 1,
@@ -128,7 +128,7 @@ const createBoard = () => {
 
 const setGame = () => {
     snake = ['00', '01', '02', '03'];
-    score = snake.length-4;
+    score =  snake.length-4;
     direction = 'ArrowRight';
     boardSquares = Array.from({ length: boardSize }, () => new Array(boardSize).fill(squareTypes.emptySquare));
     board.innerHTML = '';
