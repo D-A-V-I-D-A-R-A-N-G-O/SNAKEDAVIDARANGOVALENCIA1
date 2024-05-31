@@ -19,17 +19,22 @@ body {
     margin-top: 20px;
 }
 #start, .boardInfo{
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: #efc66a;
     font-size: 40px;
+    font-weight: 800;
 }
 #start{
     border-radius: 30px;
     border-color: #a5cd50;
     border-width: 7px;
 }
-
+#score{
+    margin-top: 20px;
+    padding-right: 60px ;
+}
 .square {
     width: 60px;
     height: 60px;
