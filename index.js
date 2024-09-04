@@ -38,7 +38,7 @@ const drawSquare = (square, type) => {
     const squareElement = document.getElementById(square);
     squareElement.setAttribute('class', `square ${type}`);
 
-    if (type === 'emptySquare') {
+    if (type === `emptySquare`) {
         emptySquares.push(square);
     } else {
         if (emptySquares.indexOf(square) !== -1) {
@@ -64,11 +64,11 @@ const moveSnake = () => {
             addFood();
         } else {
             const emptySquare = snake.shift();
-            drawSquare(emptySquare, 'emptySquare');
+            drawSquare(emptySquare, `emptySquare`);
         }
         drawSnake();
     }
-};
+}
 
 const addFood = () => {
     score++;
@@ -128,8 +128,8 @@ const createBoard = () => {
 
 const setGame = () => {
     snake = ['00', '01', '02', '03'];
-    score =  snake.length-4;
-    direction = 'ArrowRight';
+    score =  snake.length - 4;
+    direction = 'ArrowDown';
     boardSquares = Array.from({ length: boardSize }, () => new Array(boardSize).fill(squareTypes.emptySquare));
     board.innerHTML = '';
     emptySquares = [];
